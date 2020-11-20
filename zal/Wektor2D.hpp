@@ -12,7 +12,7 @@ class Wektor2D
         wspX = xx;
         wspY = yy;
     }
-    ~Wektor2D(){};
+
  
     void setX(double aa) { wspX = aa; };
     int  getX() { return wspX; };
