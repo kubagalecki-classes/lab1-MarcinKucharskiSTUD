@@ -58,22 +58,22 @@ void dodawanie_wektorow(Wektor2D v1, Wektor2D v2)
     sumY = v1.getY() + v2.getY();
     cout << " Wspolrzedne wypadkowej dodawania: " << sumX << " , " << sumY << endl;
 }
-Wektor2D operator+(Wektor2D v1, Wektor2D v2)
+/*Wektor2D operator+(Wektor2D v1, Wektor2D v2)
 {
     Wektor2D wyp;
     wyp.setX(v1.getX() + v2.getX());
     wyp.setY(v1.getY() + v2.getY());
-    
+
     return wyp;
 }
-double operator*(const Wektor2D v1,const Wektor2D v2)
+double operator*(const Wektor2D v1, const Wektor2D v2)
 {
 
     double iloczynSKAL;
     iloczynSKAL = v1.getX() * v2.getX() + v1.getY() * v2.getY();
     return iloczynSKAL;
 }
-
+*/
 int main()
 {
     Wektor2D v1, v2;
@@ -81,5 +81,5 @@ int main()
     v1.setY(2.);
     v2.setX(3.);
     v2.setY(5.);
-    v1* v2;
+    // v1* v2;
 }

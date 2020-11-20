@@ -21,17 +21,11 @@ class Wektor2D
     
     Wektor2D operator+(Wektor2D& v1, Wektor2D& v2)
     {
-    Wektor2D wyp;
-    wyp.setX(v1.getX() + v2.getX());
-    wyp.setY(v1.getY() + v2.getY());
-    
-    return wyp;
+    return Wektor2D wyp((v1.getX() + v2.getX(),v1.getY() + v2.getY());
     }
-    double operator*(const Wektor2D& v1,const Wektor2D& v2)
+    double operator*(Wektor2D& v1,Wektor2D& v2)
     {
-    double iloczynSKAL;
-    iloczynSKAL = v1.getX() * v2.getX() + v1.getY() * v2.getY();
-    return iloczynSKAL;
+    return v1.getX() * v2.getX() + v1.getY() * v2.getY();
     }
 
     ~Wektor2D(){ }
