@@ -13,7 +13,6 @@ class Wektor2D
         wspY = yy;
     }
 
- 
     void setX(double aa) { wspX = aa; };
     int  getX() { return wspX; };
     void setY(double aa) { wspY = aa; };
@@ -25,11 +24,8 @@ class Wektor2D
     }
     double operator*(Wektor2D& v1,Wektor2D& v2)
     {
-    return v1.getX() * v2.getX() + v1.getY() * v2.getY();
-    }
+    return v1.getX() * v2.getX() + v1.getY() * v2.getY();}
 
-    ~Wektor2D(){ }
-};
   private:
     double wspX;
     double wspY;
