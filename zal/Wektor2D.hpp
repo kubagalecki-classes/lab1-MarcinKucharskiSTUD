@@ -19,7 +19,7 @@ class Wektor2D
     void setY(double aa) { wspY = aa; };
     int  getY() { return wspY; };
     
-    Wektor2D operator+(Wektor2D v1, Wektor2D v2)
+    Wektor2D operator+(Wektor2D& v1, Wektor2D& v2)
     {
     Wektor2D wyp;
     wyp.setX(v1.getX() + v2.getX());
@@ -27,7 +27,7 @@ class Wektor2D
     
     return wyp;
     }
-    double operator*(const Wektor2D v1,const Wektor2D v2)
+    double operator*(const Wektor2D& v1,const Wektor2D& v2)
     {
     double iloczynSKAL;
     iloczynSKAL = v1.getX() * v2.getX() + v1.getY() * v2.getY();
