@@ -34,7 +34,11 @@ public:
         // cout << " Wspolrzedna X: " << wspX << " Wspolrzedna Y: " << wspY << endl;
     }
     void setX(double aa) { wspX = aa; };
-    int  getX() { return wspX; };
+    int  getX()
+    {
+        // cout << wspX << endl;
+        return wspX;
+    };
     void setY(double aa) { wspY = aa; };
     int  getY() { return wspY; };
 
@@ -59,15 +63,14 @@ Wektor2D operator+(Wektor2D v1, Wektor2D v2)
     Wektor2D wyp;
     wyp.setX(v1.getX() + v2.getX());
     wyp.setY(v1.getY() + v2.getY());
-
+    
     return wyp;
 }
-double operator*(Wektor2D v1, Wektor2D v2)
+double operator*(const Wektor2D v1,const Wektor2D v2)
 {
 
     double iloczynSKAL;
     iloczynSKAL = v1.getX() * v2.getX() + v1.getY() * v2.getY();
-
     return iloczynSKAL;
 }
 
@@ -78,4 +81,5 @@ int main()
     v1.setY(2.);
     v2.setX(3.);
     v2.setY(5.);
+    v1* v2;
 }
